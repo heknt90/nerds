@@ -1,0 +1,71 @@
+.button {
+  display: inline-block;
+  height: 50px;
+  padding: 16px 20px;
+  font-family: $font_alt;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  &_red {
+    background-color: $color_red;
+
+    &:hover {
+      background-color: $color_red_hover;
+    }
+
+    &:active {
+      background-color: $color_red_active;
+      color: $color_text_white_opacity;
+      box-shadow: $shadow_button;
+    }
+  }
+
+  &_green {
+    background-color: $color_green;
+
+    &:hover {
+      background-color: $color_green_hover;
+    }
+
+    &:active {
+      background-color: $color_green_active;
+      color: $color_text_white_opacity;
+      box-shadow: $shadow_button;
+    }
+  }
+
+  &_yellow {
+    background-color: $color_yellow;
+
+    &:hover {
+      background-color: $color_yellow_hover;
+    }
+
+    &:active {
+      background-color: $color_yellow_active;
+      color: $color_text_white_opacity;
+      box-shadow: $shadow_button;
+    }
+  }
+
+  &_gray {
+    background-color: $color_gray;
+    color: #000;
+
+    &:hover {
+      background-color: $color_gray_hover;
+    }
+
+    &:active {
+      background-color: $color_gray_active;
+      color: $color_text_black_opacity;
+      box-shadow: $shadow_button;
+    }
+  }
+}
