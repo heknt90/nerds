@@ -12,6 +12,145 @@
     </script>
   </head>
   <body>
-
+    <header class="site__header">
+      <nav class="header-navigation">
+        <svg width="160" height="65" role="img" class="site__logo">
+          <title>Логотип Nerds</title>
+          <use xlink:href="img/sprite.svg#nerds-logo"></use>
+        </svg>
+        <ul class="site-navigation">
+          <li class="site-navigation__item"></li>
+          <li class="site-navigation__item"></li>
+          <li class="site-navigation__item"></li>
+          <li class="site-navigation__item"></li>
+        </ul>
+        <ul class="shop-navigation">
+          <li class="shop-navigation__item">
+            <svg width="15" height="15" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#cart-icon"></use>
+            </svg>
+            Корзина
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Дизайн студия Nerds</h1>
+      <section class="promo-slider">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <input type="radio" name="promo-slider" value="slide-1" id="promo-slider__checkbox_1" class="visually-hidden" checked="checked">
+        <label for="promo-slider__checkbox_1"></label>
+        <div class="promo-slider__content">
+          <img src="img/slide-1.png" alt="" width="698" height="413">
+          <h3 class="promo-slider__slide-title">Долго, дорого, скрупулезно.</h3>
+          <p class="promo-slider__slide-description paragraph">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="#" class="button button_red">Узнать больше</a>
+        </div>
+        <input type="radio" name="promo-slider" value="slide-2" id="promo-slider__checkbox_2" class="visually-hidden">
+        <label for="promo-slider__checkbox_2"></label>
+        <div class="promo-slider__content">
+          <img src="img/slide-2.png" alt="" width="663" height="430">
+          <h3 class="promo-slider__slide-title">Любим математику как никто другой.</h3>
+          <p class="promo-slider__slide-description paragraph">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a href="#" class="button button_red">Узнать больше</a>
+        </div>
+        <input type="radio" name="promo-slider" value="slide-3" id="promo-slider__checkbox_3" class="visually-hidden">
+        <label for="promo-slider__checkbox_3"></label>
+        <div class="promo-slider__content">
+          <img src="img/slide-3.png" alt="" width="759" height="411">
+          <h3 class="promo-slider__slide-title">Только ночь, только хардкор.</h3>
+          <p class="promo-slider__slide-description paragraph">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="#" class="button button_red">Узнать больше</a>
+        </div>
+      </section>
+      <section class="services">
+        <h2 class="visually-hidden">Наши услуги</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <img src="img/service-1.jpg" alt="Выполняем веб-сайты под заказ" width="300" height="146">
+          </li>
+          <li class="services__item">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <img src="img/service-2.jpg" alt="Напишем для вас ваше собственное приложение" width="300" height="146">
+          </li>
+          <li class="services__item">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <img src="img/service-3.jpg" alt="Поможем вам подготовить презентацию" width="300" height="146">
+          </li>
+        </ul>
+      </section>
+      <section class="about-nerds">
+        <h2 class="visually-hidden">О дизайн-студии Nerds</h2>
+        <section class="brief">
+          <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+        <section class="statistics">
+          <img src="img/nerds-illustration.jpg" alt="Дизайн-студия Nerds - лучший выбор!" width="360" height="208">
+          <p>с 2004 года Любим точность во всем:</p>
+          <ul>
+            <dl class="statistics__item">
+              <dt class="statistics__term">Уровень самоотдачи</dt>
+              <dd class="statistics__value">146%</dd>
+              <dt class="statistics__term">Соблюдение сроков</dt>
+              <dd class="statistics__value">100%</dd>
+              <dt class="statistics__term">Минимальная предоплата</dt>
+              <dd class="statistics__value">50%</dd>
+            </dl>
+          </ul>
+        </section>
+      </section>
+      <section class="logotypes">
+        <img src="img/logo-1.png" alt="HTML Academy" width="199" height="68">
+        <img src="img/logo-2.png" alt="Барбершоп Borodinski" width="260" height="180">
+        <img src="img/logo-3.png" alt="Pink" width="260" height="180">
+        <img src="img/logo-4.png" alt="Mishka" width="260" height="180">
+      </section>
+    </main>
+    <footer class="site__footer">
+      <section class="map">
+        <img src="img/map.svg" alt="Как до нас добраться?" class="map__picture" width="1725" height="808">
+        <div id="map"></div>
+        <div class="map__legend">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button type="button" name="button-write-us" class="button button_red">Напишите нам</button>
+        </div>
+      </section>
+      <ul class="social__list">
+        <li>
+          <svg role="img" width="" height="">
+            <title>Мы во Вконтакте</title>
+            <use xlink:href="img/sprite.svg#vk-icon"></use>
+          </svg>
+        </li>
+        <li>
+          <svg role="img" width="" height="">
+            <title>Мы в Фейсбуке</title>
+            <use xlink:href="img/sprite.svg#fb-icon"></use>
+          </svg>
+        </li><li>
+          <svg role="img" width="" height="">
+            <title>Мы в Инстаграме</title>
+            <use xlink:href="img/sprite.svg#insta-icon"></use>
+          </svg>
+        </li>
+      </ul>
+      <div class="footer__stock">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
   </body>
 </html>
