@@ -11,18 +11,18 @@
       svg4everybody();
     </script>
   </head>
-  <body>
-    <header class="site__header">
+  <body class="page__main">
+    <header class="site__header page__container">
       <nav class="header-navigation">
         <svg width="160" height="65" role="img" class="site__logo">
           <title>Логотип Nerds</title>
           <use xlink:href="img/sprite.svg#nerds-logo"></use>
         </svg>
         <ul class="site-navigation">
-          <li class="site-navigation__item"></li>
-          <li class="site-navigation__item"></li>
-          <li class="site-navigation__item"></li>
-          <li class="site-navigation__item"></li>
+          <li class="site-navigation__item">Студия</li>
+          <li class="site-navigation__item">Клиенты</li>
+          <li class="site-navigation__item">Магазин</li>
+          <li class="site-navigation__item">Контакты</li>
         </ul>
         <ul class="shop-navigation">
           <li class="shop-navigation__item">
@@ -34,33 +34,33 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="page__container">
       <h1 class="visually-hidden">Дизайн студия Nerds</h1>
       <section class="promo-slider">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <input type="radio" name="promo-slider" value="slide-1" id="promo-slider__checkbox_1" class="visually-hidden" checked="checked">
-        <label for="promo-slider__checkbox_1"></label>
+        <input type="radio" name="promo-slider" value="slide-1" id="promo-slider__checkbox_1" class="visually-hidden promo-slider__checkbox" checked="checked">
+        <label for="promo-slider__checkbox_1" class="promo-slider__indicator"></label>
         <div class="promo-slider__content">
-          <img src="img/slide-1.png" alt="" width="698" height="413">
-          <h3 class="promo-slider__slide-title">Долго, дорого, скрупулезно.</h3>
-          <p class="promo-slider__slide-description paragraph">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#" class="button button_red">Узнать больше</a>
+          <img src="img/slide-1.png" alt="" width="698" height="413" class="promo-slider__image">
+          <h3 class="promo-slider__slide-title">Долго, дорого,<br> скрупулезно.</h3>
+          <p class="promo-slider__slide-description paragraph">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+          <a href="#" class="button button_red promo-slider__button">Узнать больше</a>
         </div>
-        <input type="radio" name="promo-slider" value="slide-2" id="promo-slider__checkbox_2" class="visually-hidden">
-        <label for="promo-slider__checkbox_2"></label>
+        <input type="radio" name="promo-slider" value="slide-2" id="promo-slider__checkbox_2" class="visually-hidden promo-slider__checkbox">
+        <label for="promo-slider__checkbox_2" class="promo-slider__indicator"></label>
         <div class="promo-slider__content">
-          <img src="img/slide-2.png" alt="" width="663" height="430">
-          <h3 class="promo-slider__slide-title">Любим математику как никто другой.</h3>
-          <p class="promo-slider__slide-description paragraph">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a href="#" class="button button_red">Узнать больше</a>
+          <img src="img/slide-2.png" alt="" width="663" height="430" class="promo-slider__image">
+          <h3 class="promo-slider__slide-title">Любим математику <br>как никто другой.</h3>
+          <p class="promo-slider__slide-description paragraph">Никакого креатива, только математические формулы <br>для расчета идеальных пропорций.</p>
+          <a href="#" class="button button_red promo-slider__button">Узнать больше</a>
         </div>
-        <input type="radio" name="promo-slider" value="slide-3" id="promo-slider__checkbox_3" class="visually-hidden">
-        <label for="promo-slider__checkbox_3"></label>
+        <input type="radio" name="promo-slider" value="slide-3" id="promo-slider__checkbox_3" class="visually-hidden promo-slider__checkbox">
+        <label for="promo-slider__checkbox_3" class="promo-slider__indicator"></label>
         <div class="promo-slider__content">
-          <img src="img/slide-3.png" alt="" width="759" height="411">
-          <h3 class="promo-slider__slide-title">Только ночь, только хардкор.</h3>
-          <p class="promo-slider__slide-description paragraph">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="#" class="button button_red">Узнать больше</a>
+          <img src="img/slide-3.png" alt="" width="759" height="411" class="promo-slider__image">
+          <h3 class="promo-slider__slide-title">Только ночь, <br>только хардкор.</h3>
+          <p class="promo-slider__slide-description paragraph">Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
+          <a href="#" class="button button_red promo-slider__button">Узнать больше</a>
         </div>
       </section>
       <section class="services">
@@ -122,7 +122,7 @@
     </main>
     <footer class="site__footer">
       <section class="map">
-        <img src="img/map.svg" alt="Как до нас добраться?" class="map__picture" width="1725" height="808">
+        <img src="img/map.jpg" alt="Как до нас добраться?" class="map__picture" width="1725" height="808">
         <div id="map"></div>
         <div class="map__legend">
           <h2>NЁRDS DESIGN STUDIO</h2>
@@ -133,18 +133,18 @@
       </section>
       <ul class="social__list">
         <li>
-          <svg role="img" width="" height="">
+          <svg role="img" width="26" height="15">
             <title>Мы во Вконтакте</title>
             <use xlink:href="img/sprite.svg#vk-icon"></use>
           </svg>
         </li>
         <li>
-          <svg role="img" width="" height="">
+          <svg role="img" width="12" height="22">
             <title>Мы в Фейсбуке</title>
             <use xlink:href="img/sprite.svg#fb-icon"></use>
           </svg>
         </li><li>
-          <svg role="img" width="" height="">
+          <svg role="img" width="21" height="21">
             <title>Мы в Инстаграме</title>
             <use xlink:href="img/sprite.svg#insta-icon"></use>
           </svg>

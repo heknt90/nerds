@@ -1,0 +1,43 @@
+.page {
+
+  &__main {
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 545px;
+      background-color: $color_gray;
+      z-index: -1;
+    }
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.paragraph {
+  font-family: $font_main;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+  transition: all 1s;
+}

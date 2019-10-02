@@ -1,0 +1,72 @@
+.promo-slider {
+  position: relative;
+  height: 431px;
+  padding-top: 317px;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+
+// TODO: переделать индикатор. Сейчас вшешняя белая окружность это тень и нажатие на нее не переключает слайды
+
+  &__indicator {
+    position: relative;
+    display: block;
+    margin: 5px;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border:  2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #fff;
+    z-index: 2;
+
+    &:not(:first-of-type) {
+      margin-left: 23px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+  }
+
+  &__text {
+    width: 400px;
+  }
+
+  &__slide-title + &__slide-description {
+    margin-top: 26px;
+  }
+
+  &__slide-title {
+    margin-top: 77px;
+    font-family: $font_alt;
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__button {
+    width: 240px;
+  }
+
+
+  &__checkbox:checked + &__indicator {
+    border-color: #c1c1c1;
+
+    + .promo-slider__content {
+      display: block;
+    }
+  }
+}
