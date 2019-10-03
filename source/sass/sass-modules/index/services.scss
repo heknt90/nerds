@@ -1,4 +1,5 @@
 .services {
+  padding-bottom: 80px;
 
   &__list {
     display: flex;
@@ -41,5 +42,6 @@
 
   &__button {
     margin-top: 33px;
+    width: 160px;
   }
 }

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // >> Slider
 
@@ -6,7 +6,7 @@ var slider = {
   checkboxes: document.querySelectorAll('.promo-slider__checkbox'),
   currentSlide: 0,
   timeWait: 4000
-}
+};
 
 if (slider.checkboxes.length > 0) {
   var autoplayPromoSlider = setInterval(function() {
@@ -24,6 +24,4 @@ function setSlide(slideNumber) {
   var nextSlide = Math.abs((slideNumber + slider.checkboxes.length) % slider.checkboxes.length);
   slider.checkboxes[nextSlide].checked = true;
   slider.currentSlide = nextSlide;
-  console.log(slider.currentSlide);
-  // return slider.currentSlide;
 }
