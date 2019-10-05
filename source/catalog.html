@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nerds | Каталог товаров</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Подключаем полифил, для отображения svg-спрайта в IE11 -->
+    <script src="js/svgforeverybody.js"></script>
+    <script>
+      svg4everybody();
+    </script>
+  </head>
+  <body class="page page_inner">
+    <header class="site__header page__container">
+      <nav class="header-navigation">
+        <svg width="160" height="65" role="img" class="site__logo">
+          <title>Логотип Nerds</title>
+          <use xlink:href="img/sprite.svg#nerds-logo"></use>
+        </svg>
+        <ul class="site-navigation">
+          <li class="site-navigation__item"><a href="#">Студия</a></li>
+          <li class="site-navigation__item"><a href="#">Клиенты</a></li>
+          <li class="site-navigation__item  site-navigation__item_current_page"><a href="#">Магазин</a></li>
+          <li class="site-navigation__item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="shop-navigation">
+          <li class="shop-navigation__item">
+            <a href="#">
+              <svg width="15" height="15" aria-hidden="true"  class="header-link__icon">
+                <use xlink:href="img/sprite.svg#cart-icon"></use>
+              </svg>
+              Корзина
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page__container">
+      <h1 class="site__heading">Магазин готовых шаблонов</h1>
+      <aside class="filters">
+
+      </aside>
+      <div class="results">
+        <aside class="sortable">
+
+        </aside>
+        <section class="templates">
+          <ul class="templates__list">
+            <li class="templates__item">
+              <img src="img/site-1.jpg" alt="Sedona" width="360" height="576">
+              <div class="templates__info">
+                <h3 class="templates__title">Sedona</h3>
+                <p class="templates__description">Информационный сайт для туристов</p>
+                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+              </div>
+            </li>
+            <li class="templates__item">
+              <img src="img/site-2.jpg" alt="Pink App" width="360" height="576">
+              <div class="templates__info">
+                <h3 class="templates__title">Pink App</h3>
+                <p class="templates__description">Продуктовый лендинг приложения для IOS и Android</p>
+                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+              </div>
+            </li>
+            <li class="templates__item">
+              <img src="img/site-3.jpg" alt="Barbershop" width="360" height="576">
+              <div class="templates__info">
+                <h3 class="templates__title">Barbershop</h3>
+                <p class="templates__description">Сайт салона красоты. Для мужчин, да.</p>
+                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+              </div>
+            </li>
+            <li class="templates__item">
+              <img src="img/site-4.jpg" alt="Mishka" width="360" height="576">
+              <div class="templates__info">
+                <h3 class="templates__title">Mishka</h3>
+                <p class="templates__description">Интернет-магазин вязаных игрушек</p>
+                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+              </div>
+            </li>
+            <li class="templates__item">
+              <img src="img/site-5.jpg" alt="A Plus" width="360" height="576">
+              <div class="templates__info">
+                <h3 class="templates__title">A Plus</h3>
+                <p class="templates__description">Лендинг курсов повышения квалификации</p>
+                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+              </div>
+            </li>
+            <li class="templates__item">
+              <img src="img/site-6.jpg" alt="Кваст" width="360" height="576">
+              <div class="templates__info">
+                <h3 class="templates__title">Кваст</h3>
+                <p class="templates__description">Промо-сайт производителя крафтового кваса</p>
+                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <nav class="pagination">
+          <ul class="pagination__pages">
+            <li class="button button_gray pagination__page pagination__page_current"><a href="#"><span class="visually-hidden">Перейти на страницу </span>1</a></li>
+            <li class="button button_gray pagination__page"><a href="#"><span class="visually-hidden">Перейти на страницу </span>2</a></li>
+            <li class="button button_gray pagination__page"><a href="#"><span class="visually-hidden">Перейти на страницу </span>3</a></li>
+          </ul>
+          <a href="#" class="button button_gray pagination__button">Следующая <span class="visually-hidden">страница</span></a>
+        </nav>
+      </div>
+    </main>
+    <footer class="site__footer">
+      <section class="map">
+        <img src="img/map.jpg" alt="Как до нас добраться?" class="map__picture" width="1725" height="808">
+        <div id="map" class="map_yandex"></div>
+        <div class="map__legend">
+          <h2 class="map__legend-title">NЁRDS DESIGN STUDIO</h2>
+          <p class="paragraph map__legend-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="paragraph map__legend-text">тел. +7 (812) 275-75-75</p>
+          <button type="button" name="button-write-us" class="button button_red map__button" onclick="toggleShowWriteUs();">Напишите нам</button>
+        </div>
+      </section>
+      <div class="page__container footer__block">
+        <ul class="social__list">
+          <li class="social__item">
+            <svg role="img" width="26" height="15">
+              <title>Мы во Вконтакте</title>
+              <use xlink:href="img/sprite.svg#vk-icon"></use>
+            </svg>
+          </li>
+          <li class="social__item">
+            <svg role="img" width="12" height="22">
+              <title>Мы в Фейсбуке</title>
+              <use xlink:href="img/sprite.svg#fb-icon"></use>
+            </svg>
+          </li>
+          <li class="social__item">
+            <svg role="img" width="21" height="21">
+              <title>Мы в Инстаграме</title>
+              <use xlink:href="img/sprite.svg#insta-icon"></use>
+            </svg>
+          </li>
+        </ul>
+        <div class="footer__stock">
+          <b>Давайте дружить, это выгодно!</b>
+          <p class="paragraph">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal modal_hide">
+      <section class="popup write-us modal_hide">
+        <h2 class="popup__title">Напишите нам</h2>
+        <form class="write-us__form" action="index.html" method="post">
+          <p class="input-group input-group_half">
+            <label for="write-us__username" class="input-group__label">Ваше имя:</label>
+            <input type="text" class="site__input" id="write-us__username" name="write-us__username" placeholder="Имя Фамилия">
+          </p>
+          <p class="input-group input-group_half">
+            <label for="write-us__email" class="input-group__label">Ваш email:</label>
+            <input type="email" class="site__input" id="write-us__email" name="write-us__email" placeholder="email@example.com">
+          </p>
+          <p class="input-group input-group__textarea">
+            <label for="write-us__message" class="input-group__label">Текст письма</label>
+            <textarea name="write-us__message" class="site__input" placeholder="В свободной форме" id="write-us__message"></textarea>
+          </p>
+          <button type="button" class="button button_red popup__button" name="button__write-us">Отправить</button>
+        </form>
+        <button type="button" name="button-close" class="button-close"><span class="visually-hidden">Закрыть окно</span></button>
+      </section>
+    </section>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=edafa72e-ead6-4f60-939b-a588d26233d4&lang=ru_RU"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
