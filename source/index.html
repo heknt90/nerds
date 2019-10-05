@@ -149,12 +149,12 @@
     <footer class="site__footer">
       <section class="map">
         <img src="img/map.jpg" alt="Как до нас добраться?" class="map__picture" width="1725" height="808">
-        <div id="map"></div>
+        <div id="map" class="map_yandex"></div>
         <div class="map__legend">
-          <h2>NЁRDS DESIGN STUDIO</h2>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <button type="button" name="button-write-us" class="button button_red">Напишите нам</button>
+          <h2 class="map__legend-title">NЁRDS DESIGN STUDIO</h2>
+          <p class="paragraph map__legend-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="paragraph map__legend-text">тел. +7 (812) 275-75-75</p>
+          <button type="button" name="button-write-us" class="button button_red map__button">Напишите нам</button>
         </div>
       </section>
       <ul class="social__list">
@@ -181,6 +181,7 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=edafa72e-ead6-4f60-939b-a588d26233d4&lang=ru_RU"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,59 @@
+.map {
+  position: relative;
+  width: 100%;
+  height: 416px;
+  overflow: hidden;
+
+  &__picture {
+    position: relative;
+    top: -40px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__legend {
+    position: absolute;
+    left: 140px;
+    top: 50px;
+    height: 308px;
+    width: 320px;
+    padding: 49px 50px 47px;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    &-title {
+      margin: 0;
+      font-size: 18px;
+      line-height: 30px;
+
+      + &-text {
+        margin-top: 22px;
+      }
+    }
+
+    &-text {
+      color: #666666;
+      line-height: 18px;
+
+      + &-text {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 47px;
+    left: 50px;
+    // right: 50px;
+    width: 219px;
+  }
+
+  &_yandex {
+    position: absolute;
+    left: 0;
+    right: 0; top: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

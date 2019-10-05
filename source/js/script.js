@@ -25,3 +25,31 @@ function setSlide(slideNumber) {
   slider.checkboxes[nextSlide].checked = true;
   slider.currentSlide = nextSlide;
 }
+
+// Slider <<
+
+// >> Yandex map
+
+// var map = document.getElementById('map');
+// console.log(map);
+
+
+if (document.getElementById('map')) {
+  ymaps.ready(init);
+}
+
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: [59.937311, 30.319355],
+    zoom: 16
+  });
+
+  var myPlacemark = new ymaps.Placemark([59.938652, 30.323185], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/map-marker.png',
+    iconImageSize: [231, 190],
+    iconImageOffset: [-47, -1]
+  });
+
+  myMap.geoObjects.add(myPlacemark);
+}
