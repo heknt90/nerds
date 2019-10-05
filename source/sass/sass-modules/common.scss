@@ -50,8 +50,20 @@ body {
   transition: all 1s;
 }
 
-.site__section {
-  border-bottom: 2px solid $color_gray;
+.site {
+
+  &__heading {
+    margin-top: 77px;
+    margin-bottom: 164px;
+    font-family: $font_alt;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+  }
+
+  &__section {
+    border-bottom: 2px solid $color_gray;
+  }
 }
 
 .pagination {

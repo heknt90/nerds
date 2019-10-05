@@ -18,6 +18,8 @@
 }
 
 .site__logo {
+  flex-grow: 0;
+  flex-shrink: 0;
 
   &:hover {
     opacity: .8;
@@ -36,6 +38,11 @@
   list-style: none;
 
   &__item {
+    display: block;
+
+    a {
+      white-space: nowrap;
+    }
 
     &:hover {
       color: $color_red
