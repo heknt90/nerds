@@ -53,12 +53,16 @@ body {
 .site {
 
   &__heading {
-    margin-top: 77px;
-    margin-bottom: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 241px;
+    margin-bottom: 55px;
     font-family: $font_alt;
     font-size: 55px;
     line-height: 55px;
-    text-align: center;
+    box-sizing: border-box;
   }
 
   &__section {
