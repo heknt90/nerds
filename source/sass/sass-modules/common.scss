@@ -4,18 +4,22 @@ body {
 
 .page {
 
-  &__main {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $color_gray;
+    z-index: -1;
+  }
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 545px;
-      background-color: $color_gray;
-      z-index: -1;
-    }
+  &_main:before {
+    height: 545px;
+  }
+
+  &_inner:before {
+    height: 355px;
   }
 
   &__container {
@@ -48,4 +52,35 @@ body {
 
 .site__section {
   border-bottom: 2px solid $color_gray;
+}
+
+.pagination {
+  margin: 60px 0;
+
+  &, &__pages {
+    display: flex;
+  }
+
+  &__pages {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__page {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+
+    &_current {
+      background-color: #fff;
+      border: 3px solid #dbdbdb;
+    }
+  }
+
+  .button:not(:first-of-type),
+  .pagination__button {
+    margin-left: 11px;
+  }
 }
