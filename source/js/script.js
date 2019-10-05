@@ -36,7 +36,7 @@ if (document.getElementById('map')) {
 
 function init() {
   var myMap = new ymaps.Map("map", {
-    center: [59.937311, 30.319355],
+    center: [59.939811, 30.319855],
     zoom: 16
   });
 
