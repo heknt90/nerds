@@ -79,3 +79,70 @@ a {
     }
   }
 }
+
+.input-group {
+  display: block;
+  margin: 0;
+  margin-bottom: 33px;
+  flex-grow: 1;
+
+  &:last-of-type {
+    margin-bottom: 47px;
+  }
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &_half {
+    width: 340px;
+
+    &:nth-of-type(2n) {
+      margin-left: 40px;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      box-sizing: border-box;
+      resize: none;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+
+}
+
+.site__input {
+  padding: 13px 14px 16px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+
+  &:hover {
+    border-color: #b4b9bb;
+  }
+
+  &:active {
+    border-color: #000;
+
+    &::placeholder {
+      color: #444444;
+    }
+  }
+
+  &:focus {
+    border-color: $color_red;
+    color: $color_red;
+    outline: none;
+  }
+}

@@ -30,10 +30,6 @@ function setSlide(slideNumber) {
 
 // >> Yandex map
 
-// var map = document.getElementById('map');
-// console.log(map);
-
-
 if (document.getElementById('map')) {
   ymaps.ready(init);
 }
@@ -53,3 +49,33 @@ function init() {
 
   myMap.geoObjects.add(myPlacemark);
 }
+
+// Yandex <<
+
+// >> Modals
+
+var modals = {
+  wrapper: document.querySelector('.modal'),
+  writeUs: document.querySelector('.write-us'),
+  buttons: {
+    close: document.querySelectorAll('.button-close')
+  }
+}
+
+console.log(modals.buttons.close);
+
+if (modals.buttons.close.length > 0 && modals.writeUs) {
+  for (var i = 0; i < modals.buttons.close.length; i++) {
+    modals.buttons.close[i].addEventListener('click', function() {
+      console.log(1);
+      toggleShowWriteUs();
+    });
+  }
+}
+
+function toggleShowWriteUs() {
+  modals.wrapper.classList.toggle('modal_hide');
+  modals.writeUs.classList.toggle('modal_hide');
+}
+
+// Modals <<

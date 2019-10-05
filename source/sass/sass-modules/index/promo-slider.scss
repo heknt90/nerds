@@ -2,11 +2,11 @@
   position: relative;
   height: 431px;
   padding-top: 317px;
-  // border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   box-sizing: border-box;
+  overflow-x: hidden;
 
 // TODO: переделать индикатор. Сейчас вшешняя белая окружность это тень и нажатие на нее не переключает слайды
 
