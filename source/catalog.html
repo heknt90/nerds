@@ -39,10 +39,125 @@
     <main class="page__container">
       <h1 class="site__heading">Магазин готовых шаблонов</h1>
       <aside class="filters">
+        <h2 class="visually-hidden">Фильтры:</h2>
+        <form class="filters__form" action="index.html" method="get">
+          <fieldset class="filters__group">
+            <h3 class="widget__heading filters__heading">Стоимость:</h3>
+            <div class="filters__wrap-field filters__wrap-field_large">
+              <div class="range">
+                <div class="range__selected">
+                  <span class="range__handle range__handle_min"></span>
+                  <span class="range__handle range__handle_max"></span>
+                </div>
+              </div>
+            </div>
+            <div class="range__inputs-row">
+              <span class="range__label">от</span>
+              <p class="filters__wrap-field filters__wrap-field_small">
+                <input type="number" name="filters__input-price_min" value="0" class="range__input">
+              </p>
+              <span class="range__label">до</span>
+              <p class="filters__wrap-field  filters__wrap-field_small">
+                <input type="number" name="filters__input-price_max" value="15000" class="range__input">
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="filters__group">
+            <h3 class="widget__heading">Сетка:</h3>
+            <p class="radio-button-group">
+              <input type="radio" id="filters__grid_adaptive" name="filters__grid" value="adaptive" class="visually-hidden filters__radio-button" checked="checked">
+              <label for="filters__grid_adaptive">
+                <span class="radio-indicator"></span>
+                Адаптивная
+              </label>
+            </p>
+            <p class="radio-button-group">
+              <input type="radio" id="filters__grid_fixed" name="filters__grid" value="fixed" class="visually-hidden filters__radio-button">
+              <label for="filters__grid_fixed">
+                <span class="radio-indicator"></span>
+                Фиксированная
+              </label>
+            </p>
+            <p class="radio-button-group">
+              <input type="radio" id="filters__grid_response" name="filters__grid" value="response" class="visually-hidden filters__radio-button">
+              <label for="filters__grid_response">
+                <span class="radio-indicator"></span>
+                Резиновая
+              </label>
+            </p>
+          </fieldset>
+
+          <fieldset class="filters__group">
+            <h3 class="widget__heading">Особенности:</h3>
+            <p class="checkbox-group">
+              <input type="checkbox" id="filters__options_option-1" name="filters__options" value="option-1" class="visually-hidden filters__checkbox" checked="checked">
+              <label for="filters__options_option-1">
+                <span class="checkbox-indicator"></span>
+                Слайдер
+              </label>
+            </p>
+            <p class="checkbox-group">
+              <input type="checkbox" id="filters__options_option-2" name="filters__options" value="option-2" class="visually-hidden filters__checkbox">
+              <label for="filters__options_option-2">
+                <span class="checkbox-indicator"></span>
+                Блок преимуществ
+              </label>
+            </p>
+            <p class="checkbox-group">
+              <input type="checkbox" id="filters__options_option-3" name="filters__options" value="option-3" class="visually-hidden filters__checkbox" checked="checked">
+              <label for="filters__options_option-3">
+                <span class="checkbox-indicator"></span>
+                Новости
+              </label>
+            </p>
+            <p class="checkbox-group">
+              <input type="checkbox" id="filters__options_option-4" name="filters__options" value="option-4" class="visually-hidden filters__checkbox">
+              <label for="filters__options_option-4">
+                <span class="checkbox-indicator"></span>
+                Галерея
+              </label>
+            </p>
+            <p class="checkbox-group">
+              <input type="checkbox" id="filters__options_option-5" name="filters__options" value="option-5" class="visually-hidden filters__checkbox">
+              <label for="filters__options_option-5">
+                <span class="checkbox-indicator"></span>
+                Корзина
+              </label>
+            </p>
+          </fieldset>
+          <button type="submit" name="button-submit" class="button button_gray filters__button">Показать</button>
+        </form>
 
       </aside>
       <div class="results">
         <aside class="sortable">
+          <h2 class="widget__heading">Сортировать:</h2>
+
+          <p class="sortable-type">
+            <input type="radio" id="sortable-type_price" name="sortable-type" value="price" class="visually-hidden sortable__checkbox" checked="checked">
+            <label for="sortable-type_price" class="sortable__label sortable-type__label">По цене</label>
+            <input type="radio" id="sortable-type_type" name="sortable-type" value="type" class="visually-hidden sortable__checkbox">
+            <label for="sortable-type_type" class="sortable__label sortable-type__label">По типу</label>
+            <input type="radio" id="sortable-type_name" name="sortable-type" value="name" class="visually-hidden sortable__checkbox">
+            <label for="sortable-type_name" class="sortable__label sortable-type__label">По названию</label>
+          </p>
+
+          <p class="sortable-direction">
+            <input type="radio" id="sortable-direction_inverse" name="sortable-direction" value="inverse" class="visually-hidden sortable__checkbox" checked="checked">
+            <label for="sortable-direction_inverse" class="sortable__label sortable-direction__label"><span class="visually-hidden">По возрастанию</span>
+              <svg width="11" height="10" class="sortable-direction__indicator sortable-direction__indicator_inverse" role="img">
+                <title>Порядок по возрастанию</title>
+                <use xlink:href='img/sprite.svg#icon-dir'></use>
+              </svg>
+            </label>
+            <input type="radio" id="sortable-direction_reverse" name="sortable-direction" value="reverse" class="visually-hidden sortable__checkbox">
+            <label for="sortable-direction_reverse" class="sortable__label sortable-direction__label"><span class="visually-hidden">По убыванию</span>
+              <svg width="11" height="10" class="sortable-direction__indicator sortable-direction__indicator_reverse" role="img">
+                <title>Порядок по убыванию</title>
+                <use xlink:href='img/sprite.svg#icon-dir'></use>
+              </svg>
+            </label>
+          </p>
 
         </aside>
         <section class="templates">
