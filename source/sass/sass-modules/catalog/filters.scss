@@ -39,7 +39,7 @@
 
   &__button {
     width: 100%;
-    margin-top: 48px;
+    margin: 48px 0;
   }
 }
 
@@ -69,11 +69,11 @@
     cursor: pointer;
 
     &_min {
-      left: -9px;
+      left: -10px;
     }
 
     &_max {
-      right: -9px;
+      right: -10px;
     }
 
     &:hover {

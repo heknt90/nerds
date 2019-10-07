@@ -14,13 +14,23 @@
     position: relative;
     display: block;
     margin: 5px;
-    width: 4px;
-    height: 4px;
+    width: 8px;
+    height: 8px;
+    border:  5px solid #fff;
+    // box-shadow: 0 0 0 5px #fff;
     background-color: #fff;
-    border:  2px solid #fff;
     border-radius: 50%;
-    box-shadow: 0 0 0 5px #fff;
-    z-index: 2;
+    cursor: pointer;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 4px; height: 4px;
+      margin: 2px 0 0 2px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
 
     &:not(:first-of-type) {
       margin-left: 23px;
@@ -55,6 +65,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: -1;
   }
 
   &__button {
@@ -63,7 +74,7 @@
 
 
   &__checkbox:checked + &__indicator {
-    border-color: #c1c1c1;
+    background-color: #c1c1c1;
 
     + .promo-slider__content {
       display: block;

@@ -14,14 +14,16 @@
   <body class="page page_inner">
     <header class="site__header page__container">
       <nav class="header-navigation">
-        <svg width="160" height="65" role="img" class="site__logo">
-          <title>Логотип Nerds</title>
-          <use xlink:href="img/sprite.svg#nerds-logo"></use>
-        </svg>
+        <a href="index.html">
+          <svg width="160" height="65" role="img" class="site__logo">
+            <title>Логотип Nerds</title>
+            <use xlink:href="img/sprite.svg#nerds-logo"></use>
+          </svg>
+        </a>
         <ul class="site-navigation">
           <li class="site-navigation__item"><a href="#">Студия</a></li>
           <li class="site-navigation__item"><a href="#">Клиенты</a></li>
-          <li class="site-navigation__item  site-navigation__item_current_page"><a href="#">Магазин</a></li>
+          <li class="site-navigation__item  site-navigation__item_current_page"><a href="catalog.html">Магазин</a></li>
           <li class="site-navigation__item"><a href="#">Контакты</a></li>
         </ul>
         <ul class="shop-navigation">
@@ -40,7 +42,7 @@
       <h1 class="site__heading">Магазин готовых шаблонов</h1>
       <aside class="filters">
         <h2 class="visually-hidden">Фильтры:</h2>
-        <form class="filters__form" action="index.html" method="get">
+        <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filters__group">
             <h3 class="widget__heading filters__heading">Стоимость:</h3>
             <div class="filters__wrap-field filters__wrap-field_large">
@@ -54,11 +56,11 @@
             <div class="range__inputs-row">
               <span class="range__label">от</span>
               <p class="filters__wrap-field filters__wrap-field_small">
-                <input type="number" name="filters__input-price_min" value="0" class="range__input">
+                <input type="number" name="filters__input-price_min" value="0" class="range__input range__input_min">
               </p>
               <span class="range__label">до</span>
               <p class="filters__wrap-field  filters__wrap-field_small">
-                <input type="number" name="filters__input-price_max" value="15000" class="range__input">
+                <input type="number" name="filters__input-price_max" value="15000" class="range__input range__input_max">
               </p>
             </div>
           </fieldset>
@@ -163,52 +165,64 @@
         <section class="templates">
           <ul class="templates__list">
             <li class="templates__item">
-              <img src="img/site-1.jpg" alt="Sedona" width="360" height="576">
-              <div class="templates__info">
-                <h3 class="templates__title">Sedona</h3>
-                <p class="templates__description">Информационный сайт для туристов</p>
-                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
-              </div>
+              <a href="#" class="templates__link">
+                <img src="img/site-1.jpg" alt="Sedona" width="360" height="576">
+                <div class="templates__info">
+                  <h3 class="templates__title">Sedona</h3>
+                  <p class="templates__description">Информационный сайт для туристов</p>
+                  <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+                </div>
+              </a>
             </li>
             <li class="templates__item">
-              <img src="img/site-2.jpg" alt="Pink App" width="360" height="576">
-              <div class="templates__info">
-                <h3 class="templates__title">Pink App</h3>
-                <p class="templates__description">Продуктовый лендинг приложения для IOS и Android</p>
-                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
-              </div>
+              <a href="#" class="templates__link">
+                <img src="img/site-2.jpg" alt="Pink App" width="360" height="576">
+                <div class="templates__info">
+                  <h3 class="templates__title">Pink App</h3>
+                  <p class="templates__description">Продуктовый лендинг приложения для IOS и Android</p>
+                  <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+                </div>
+              </a>
             </li>
             <li class="templates__item">
-              <img src="img/site-3.jpg" alt="Barbershop" width="360" height="576">
-              <div class="templates__info">
-                <h3 class="templates__title">Barbershop</h3>
-                <p class="templates__description">Сайт салона красоты. Для мужчин, да.</p>
-                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
-              </div>
+              <a href="#" class="templates__link">
+                <img src="img/site-3.jpg" alt="Barbershop" width="360" height="576">
+                <div class="templates__info">
+                  <h3 class="templates__title">Barbershop</h3>
+                  <p class="templates__description">Сайт салона красоты. Для мужчин, да.</p>
+                  <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+                </div>
+              </a>
             </li>
             <li class="templates__item">
-              <img src="img/site-4.jpg" alt="Mishka" width="360" height="576">
-              <div class="templates__info">
-                <h3 class="templates__title">Mishka</h3>
-                <p class="templates__description">Интернет-магазин вязаных игрушек</p>
-                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
-              </div>
+              <a href="#" class="templates__link">
+                <img src="img/site-4.jpg" alt="Mishka" width="360" height="576">
+                <div class="templates__info">
+                  <h3 class="templates__title">Mishka</h3>
+                  <p class="templates__description">Интернет-магазин вязаных игрушек</p>
+                  <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+                </div>
+              </a>
             </li>
             <li class="templates__item">
-              <img src="img/site-5.jpg" alt="A Plus" width="360" height="576">
-              <div class="templates__info">
-                <h3 class="templates__title">A Plus</h3>
-                <p class="templates__description">Лендинг курсов повышения квалификации</p>
-                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
-              </div>
+              <a href="#" class="templates__link">
+                <img src="img/site-5.jpg" alt="A Plus" width="360" height="576">
+                <div class="templates__info">
+                  <h3 class="templates__title">A Plus</h3>
+                  <p class="templates__description">Лендинг курсов повышения квалификации</p>
+                  <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+                </div>
+              </a>
             </li>
             <li class="templates__item">
-              <img src="img/site-6.jpg" alt="Кваст" width="360" height="576">
-              <div class="templates__info">
-                <h3 class="templates__title">Кваст</h3>
-                <p class="templates__description">Промо-сайт производителя крафтового кваса</p>
-                <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
-              </div>
+              <a href="#" class="templates__link">
+                <img src="img/site-6.jpg" alt="Кваст" width="360" height="576">
+                <div class="templates__info">
+                  <h3 class="templates__title">Кваст</h3>
+                  <p class="templates__description">Промо-сайт производителя крафтового кваса</p>
+                  <button type="button" name="button-buy-template" class="button button_red templates__button">9 900 Руб.</button>
+                </div>
+              </a>
             </li>
           </ul>
         </section>
@@ -237,22 +251,28 @@
       <div class="page__container footer__block">
         <ul class="social__list">
           <li class="social__item">
-            <svg role="img" width="26" height="15">
-              <title>Мы во Вконтакте</title>
-              <use xlink:href="img/sprite.svg#vk-icon"></use>
-            </svg>
+            <a href="vk.com" class="link_expanded">
+              <svg role="img" width="26" height="15">
+                <title>Мы во Вконтакте</title>
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <svg role="img" width="12" height="22">
-              <title>Мы в Фейсбуке</title>
-              <use xlink:href="img/sprite.svg#fb-icon"></use>
-            </svg>
+            <a href="facebook.com" class="link_expanded">
+              <svg role="img" width="12" height="22">
+                <title>Мы в Фейсбуке</title>
+                <use xlink:href="img/sprite.svg#fb-icon"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <svg role="img" width="21" height="21">
-              <title>Мы в Инстаграме</title>
-              <use xlink:href="img/sprite.svg#insta-icon"></use>
-            </svg>
+            <a href="instagram.com" class="link_expanded">
+              <svg role="img" width="21" height="21">
+                <title>Мы в Инстаграме</title>
+                <use xlink:href="img/sprite.svg#insta-icon"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <div class="footer__stock">
@@ -265,20 +285,20 @@
     <section class="modal modal_hide">
       <section class="popup write-us modal_hide">
         <h2 class="popup__title">Напишите нам</h2>
-        <form class="write-us__form" action="index.html" method="post">
+        <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
           <p class="input-group input-group_half">
             <label for="write-us__username" class="input-group__label">Ваше имя:</label>
-            <input type="text" class="site__input" id="write-us__username" name="write-us__username" placeholder="Имя Фамилия">
+            <input type="text" class="site__input" id="write-us__username" name="write-us__username" placeholder="Имя Фамилия" required="required" autocomplete="off">
           </p>
           <p class="input-group input-group_half">
             <label for="write-us__email" class="input-group__label">Ваш email:</label>
-            <input type="email" class="site__input" id="write-us__email" name="write-us__email" placeholder="email@example.com">
+            <input type="email" class="site__input" id="write-us__email" name="write-us__email" placeholder="email@example.com" required="required" autocomplete="off">
           </p>
           <p class="input-group input-group__textarea">
             <label for="write-us__message" class="input-group__label">Текст письма</label>
-            <textarea name="write-us__message" class="site__input" placeholder="В свободной форме" id="write-us__message"></textarea>
+            <textarea name="write-us__message" class="site__input" placeholder="В свободной форме" id="write-us__message" required="required"></textarea>
           </p>
-          <button type="button" class="button button_red popup__button" name="button__write-us">Отправить</button>
+          <button type="submit" class="button button_red popup__button" name="buttonWriteUs">Отправить</button>
         </form>
         <button type="button" name="button-close" class="button-close"><span class="visually-hidden">Закрыть окно</span></button>
       </section>

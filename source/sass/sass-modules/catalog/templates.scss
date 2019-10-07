@@ -14,12 +14,17 @@
   }
 
   &__item {
-    position: relative;
     margin: 15px 20px;
+    border: 1px solid rgba(0,0,0,.1);
+    width: 360px;
+    box-sizing: border-box;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
     padding-top: 40px;
     width: 360px;
-    border: 1px solid rgba(0,0,0,.1);
-    box-sizing: border-box;
 
     img {
       display: block;
@@ -35,8 +40,9 @@
     }
 
     &:hover {
+      box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 
-      &:before {
+      :before {
         opacity: 1;
       }
 
@@ -51,7 +57,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 232px;
+    min-height: 232px;
     text-align: center;
     background-color: #eeeeee;
     box-sizing: border-box;

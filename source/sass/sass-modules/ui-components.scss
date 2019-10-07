@@ -21,6 +21,7 @@ a {
   box-sizing: border-box;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 
   &_red {
     background-color: $color_red;
@@ -119,8 +120,6 @@ a {
     margin-bottom: 10px;
     font-weight: bold;
   }
-
-
 }
 
 .site__input {
@@ -141,8 +140,31 @@ a {
   }
 
   &:focus {
+    border-color: #000;
+    outline: none;
+  }
+
+  &_invalid {
     border-color: $color_red;
     color: $color_red;
-    outline: none;
+  }
+}
+
+.site__form {
+
+  &_invalid {
+    animation: bounce .3s ease-in-out;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  30%, 50%, 70% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
   }
 }
